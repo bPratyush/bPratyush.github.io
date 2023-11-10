@@ -78,7 +78,7 @@ li {
 
 /* Name and Social Icons */
 #name-social-container {
-    margin-top: 20vh;
+    margin-top: 2vh;
     text-align: center;
 }
 
@@ -91,16 +91,16 @@ li {
 }
 
 .social-icons {
-    list-style: none;
-    padding: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .social-icons li {
     padding: 10px;
     transition: box-shadow 0.3s ease, transform 0.3s ease; /* Added transform transition */
     display: inline-block;
+    
 }
 
 .social-icons li a {
