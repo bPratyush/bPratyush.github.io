@@ -1,6 +1,5 @@
 ### Hi there 👋
-An attempt to create my own personal website using vanilla HTML and CSS
-## Kindly Check it out
+An attempt to create my own personal website using vanilla HTML and CSS. Do Check it out !!
 <!--
 **bPratyush/bPratyush** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
