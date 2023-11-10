@@ -1,0 +1,520 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    background: linear-gradient(-45deg, #f0f2f5, #d9e1e9, #f0f2f5);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    background-attachment: fixed;
+}
+
+/* Add a smooth transition to the body */
+body, html {
+    transition: 0.5s ease-in-out;
+}
+
+/* Body Header */
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url("Resume/2927.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+/* Add some padding and a box shadow to the body header */
+#body-header {
+    padding: 2rem;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the unordered list */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styles for the list items */
+li {
+    color: #666;
+    font-size: 1rem; 
+    margin-bottom: 5px;
+}
+
+/* Horizontal Lists */
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 0.4s; /* Adjusted the timing */
+}
+
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Name and Social Icons */
+#name-social-container {
+    margin-top: 20vh;
+    text-align: center;
+}
+
+#my-name {
+    font-size: 5rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 1000;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons li {
+    padding: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Added transform transition */
+    display: inline-block;
+}
+
+.social-icons li a {
+    display: block; /* Ensure the entire link is clickable */
+}
+
+.social-icons li a img {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+
+.social-icons li a img:hover {
+    box-shadow: 0px 0px 10px 4px rgba(230, 196, 196, 0.3);
+    transform: scale(1.1); /* Added scale effect */
+}
+
+/* Section Classes */
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px; /* Adjusted margin */
+}
+
+section:nth-child(2n) {
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+    text-align: center; /* Centered the text */
+}
+
+.section-heading span {
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+/* About Section */
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center; /* Centered the text */
+}
+
+#my-image {
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px black;
+}
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin: auto;
+}
+
+/* Skills Section */
+.skills-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skill-logo {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease; /* Added transform transition */
+}
+
+.skill-logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.skill-logo:hover {
+    transform: scale(1.1); /* Added scale effect on hover */
+}
+
+/* Common Margin Classes */
+.mb75px {
+    margin-bottom: 75px;
+}
+
+/* Common color classes */
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+}
+
+/* Setting background-color */
+.mb-blue {
+    background-color: #2857a4;
+}
+
+.mb-orange {
+    background-color: #ec4d1c;
+}
+
+.mb-teal {
+    background-color: #0b8176;
+}
+
+.mb-light-purple {
+    background-color: #93738c;
+}
+
+/* Animation and Styling for Experience and Contact Sections */
+.animated-section {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-item {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUpItem 1s forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeInUpItem {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation and Styling for Experience Section */
+.experience-item {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.experience-item h2 {
+    color: #2857a4;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.experience-item .company {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.experience-item .date {
+    color: #999;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.experience-item p {
+    color: #444;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Styling for Education Section */
+.education-item {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.education-item h2 {
+    color: #2857a4;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.education-item .university {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.education-item .date {
+    color: #999;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.education-item p {
+    color: #444;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+    .education-item {
+        padding: 15px;
+    }
+
+    .education-item h2 {
+        font-size: 1.3rem;
+    }
+
+    .education-item .university {
+        font-size: 1rem;
+    }
+
+    .education-item .date {
+        font-size: 0.9rem;
+    }
+
+    .education-item p {
+        font-size: 1rem;
+    }
+}
+
+/* Styling for Skills Section */
+.skills-display {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* Styling for Certifications Section */
+#certifications {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.certification-item {
+    padding: 20px;
+    text-align: center;
+}
+
+.certification-item h2 {
+    color: #2857a4;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.certification-item .provider,
+.certification-item .date {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.certification-item .date {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.certification-item p {
+    color: #444;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Adjusted margin for the certifications section */
+#certifications .certification-item:last-child {
+    margin-bottom: 50px;
+}
+
+
+.contact-details {
+    display: inline-block;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 15px;
+    flex-wrap: wrap;
+    color: #2857a4;
+    font-size: 1.0rem;
+    margin-bottom: 5px;
+}
+
+.contact-icon {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.footer {
+    background-color: lightgrey;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Added gradient animation to the background */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px; /* Adjust margin to your preference */
+}
+
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 2px solid #0f1923; /* Added border */
+    background-color: transparent; /* Transparent background */
+    color: white;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 20px; /* Adjusted padding for better appearance */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+    align-items: center;
+}
+
+.button::before,
+.button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    border: 2px solid whitesmoke; 
+    transition: all .15s ease;
+}
+
+.button::before {
+    top: 0;
+    border-bottom-width: 0;
+}
+
+.button::after {
+    bottom: 0;
+    border-top-width: 0;
+}
+
+.button_text {
+    position: relative;
+    z-index: 1;
+}
+
+.button:hover::before,
+.button:hover::after {
+    right: 3px;
+    left: 3px;
+}
+
+.button:hover::before {
+    top: 3px;
+}
+
+.button:hover::after {
+    bottom: 3px;
+}
