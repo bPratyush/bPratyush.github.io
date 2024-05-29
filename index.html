@@ -1,293 +1,187 @@
 <!DOCTYPE html>
-<html>
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pratyush Bindal</title>
-    <link rel="stylesheet" href="resume.css">
-    <link href="Resume/favicon.ico" rel="icon" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
-</head>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pratyush Bindal</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="images/favicon.ico" rel="icon" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
     <body>
-        <header id="body-header">
-            <nav>
-                <ul class="horizontal-list text-center nav-menu">
-                    <li>
-                        <a href="#"> Home </a>
-                    </li>
-                    <li>
-                        <a href="#about"> About </a>
-                    </li>
-                    <li>
-                        <a href="#skills"> Skills </a>
-                    </li>
-                    <li>
-                        <a href="#experience"> Experience </a>
-                    </li>
-                    <li>
-                        <a href="#education"> Education </a>
-                    </li>
-                    <li>
-                        <a href="#volunteer"> Volunteer </a>
-                    </li>
-                    <li>
-                        <a href="#certifications"> Certifications</a>
-                    </li>
-                    </li>
-                </ul>
-            </nav>
-            <div id="name-social-container">
-                <div class="text-center">
-                    <h1 id="my-name">
-                        Pratyush Bindal
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/large.png" alt="logo" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i> <!--For Mobile View-->
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1>
+                        Hello, I'm <span>Pratyush Bindal</span>
                     </h1>
                 </div>
-                <div>
-                    <ul class="horizontal-list text-center social-icons">
-                        <li>
-                            <a href="https://in.linkedin.com/in/pratyushbindal" target="_blank">
-                                <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000015_1549330433_linkedin-logo.png" alt="linkedin"/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/bPratyush" target="_blank">
-                                <img src="Resume/github-mark-white.svg" alt="github" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.quora.com/profile/PRATYUSH-BINDAL" target="_blank">
-                                <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000021_1549822861_quora-logo.png" alt="quora" />
-                            </a>
-                        </li>
-                    </ul>                    
-                </div>
-    
             </div>
-            <div class="button-container">
-                <a href="Resume/Resume.pdf" target="_blank" class="button-link">
-                    <button class="button button_lg">
-                        <span class="button_sl"></span>
-                        <span class="button_text">Download CV</span>
-                    </button>
-                </a>
+        </div>
+<!--About-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/Img.jpeg" alt="about" class="about-img">
+                    </div>
+                    <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I am Pratyush Bindal pursuing Bachelors of Engineering in Computer Science and Engineering with a Minor in Data Science at BITS Pilani</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>C, C++, Java, Python, HTML, CSS, SQL, JavaScript, TypeScript, Prolog, Verilog HDL, Assembly</li>
+                            <li><span>Technologies</span><br>TensorFlow, PyTorch, Spring Framework, React, SolidJS, Google Cloud Platform</li>
+                            <li><span>Databases</span><br>NoSQL, PostgreSQL & SQL-based databases like MongoDB, Supabase, Oracle MySQL</li>
+                            <li><span>Developer Tools</span><br>Postman, VSCode, IntelliJ, Eclipse, PyCharm, Android SDK, Anaconda, Git, Docker</li>
+                            <li><span>Libraries</span><br>numpy, scipy, pandas, matplotlib, scikit-learn, keras, seaborn, openCV</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Summer Research Intern</span><br>Indian Institute of Remote Sensing (IIRS), Indian Space Research Organisation (ISRO)<br>Dehradun, Uttarakhand, India<br>May 2024 - July 2024</li>
+                            <li><span>Undergraduate Teaching Assistant</span><br>Birla Institute of Technology and Science, Pilani<br>Hyderabad, Telangana, India<br>Aug 2023 - Dec 2023</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.E., Computer Science</span><br>Birla Institute of Technology and Science, Pilani<br>Hyderabad, Telangana, India<br>Oct 2022 - July 2026</li>
+                            <li><span>High School</span><br>G. D. Goenka Public School<br>Muzaffarnagar, Uttar Pradesh, India<br>April 2018 - July 2022</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
             </div>
-            
-        </header>
-        <main>
-            <section id = "about">
-                <div id="my-image">
-                    <img src="Resume/Img.jpeg">
-                </div>
-                <div id="about-para">
-                <p>
-                    Motivated and dedicated Computer Science undergraduate at BITS Pilani, Hyderabad Campus
-                </p>
-                </div>
-            </section>
-            <section id="skills" class="animated-section">
-                <h1 class="section-heading mb75px">
-                    <span>
-                        <i class="fas fa-chalkboard-teacher"></i>
-                    </span>
-                    <span> SKILLS </span>
-                </h1>
-            
-                <div class="skills-display">
-                    <div class="skill-logo">
-                        <img src="Resume/c-1.svg" alt="C Logo">
+        </div>
+<!--Portfolio-->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/Proj1.jpeg" alt="work" class="work-img">
+                        <div class="layer">
+                            <h3>Reinforcement Learning in Cybersecurity</h3>
+                            <p>Deep Reinforcement Learning based Network Intrusion Detection System</p>
+                            <a href='https://github.com/bPratyush/Machine-Learning/tree/main/Instrusion%20Detection%20System'><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
-                    <div class="skill-logo">
-                        <img src="Resume/C++.svg" alt="C++ Logo">
+                    <div class="work">
+                        <img src="images/Proj2.jpeg" alt="work" class="work-img">
+                        <div class="layer">
+                        <h3>Handwritten Digit Recognizer</h3>
+                            <p>A fully functional neural network recognising Handwritten Digits from scratch without using any libraries</p>
+                            <a href='https://github.com/bPratyush/Machine-Learning/tree/main/Handwritten%20Digit%20Recognizer'><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
-                    <div class="skill-logo">
-                        <img src="Resume/html-1.svg" alt="HTML Logo">
-                    </div>
-                    <div class="skill-logo">
-                        <img src="Resume/css-3.svg" alt="CSS Logo">
-                    </div>
-                    <div class="skill-logo">
-                        <img src="Resume/javascript-1.svg" alt="JS Logo">
-                    </div>
-                    <div class="skill-logo">
-                        <img src="Resume/java-svgrepo-com.svg" alt="Java Logo">
-                    </div>
-                    <div class="skill-logo">
-                        <img src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg" alt="Python Logo">
-                    </div>
-                    <div class="skill-logo">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg" alt="PyTorch Logo">
-                    </div>
-                    <div class="skill-logo">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg" alt="TensorFlow Logo">
+                    <div class="work">
+                        <img src="images/Proj3.jpeg" alt="work" class="work-img">
+                        <div class="layer">
+                        <h3>BITSBids</h3>
+                            <p>Ready-to-scale Full Stack Bidding Website exclusive to BITSians</p>
+                            <a href='https://github.com/bPratyush/BITSBids'><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
-            </section>            
-
-<!-- Experience Section -->
-<section id="experience" class="animated-section">
-    <h1 class="section-heading mb75px">
-        <span>
-            <i class="fas fa-briefcase"></i>
-        </span>
-        <span> EXPERIENCE </span>
-    </h1>
-    <div class="experience-item animated-item">
-        <h2>Summer Research Intern</h2>
-        <p class="company">Indian Institute of Remote Sensing (IIRS), Indian Space Research Organisation (ISRO)</p>
-        <p class="date">May 2024-July 2024</p>
-    </div>
-    <div class="experience-item animated-item">
-        <h2>Undergraduate Teaching Assistant: PHY F111 (Mechanics, Oscillations and Waves)</h2>
-        <p class="company">BITS Pilani</p>
-        <p class="date">August 2023-December 2023</p>
-        <p>Helped in developing Study Material and Practice Quizzes for the course</p>
-    </div>
-    <div class="experience-item animated-item">
-        <h2>Editorial, Research and Events Member</h2>
-        <p class="company">Ad Astra - Astronomy and Science Club</p>
-        <p class="date">October 2022-September 2023</p>
-        <p>Contributed to the Club by writing insightful articles and essays, and helped in managing the events</p>
-    </div>
-  
-
-</section>
-<!-- Education Section -->
-<section id="education" class="animated-section">
-    <h1 class="section-heading mb75px">
-        <span>
-            <i class="fas fa-graduation-cap"></i>
-        </span>
-        <span> EDUCATION </span>
-    </h1>
-    <div class="education-item animated-item">
-        <h2>B.E., Computer Science</h2>
-        <p class="university">BITS Pilani</p>
-        <p class="date">2022-Present</p>
-        <ul>
-            <li>
-
-            </li>
-        </ul>
-    </div>
-    <div class="education-item animated-item">
-        <h2>High School</h2>
-        <p class="university">G. D. Goenka Public School</p>
-        <p class="date">2018-2022</p>
-        <ul>
-            <li>Head Boy - Student Council (2021-22)</li>
-            <li>School Captain - Student Council (2019-20)</li>
-            <li>Member - STEM Club</li>
-        </ul>
-    </div>
-    
-<!-- Volunteer Section -->
-<section id="volunteer" class="animated-section">
-    <h1 class="section-heading mb75px">
-        <span>
-            <i class="fas fa-hands-helping"></i>
-        </span>
-        <span> VOLUNTEER </span>
-    </h1>
-    <div class="experience-item animated-item">
-        <h2>MATH F111: Mathematics I Mentor</h2>
-        <p class="company">Academic Counselling Cell</p>
-        <p class="date">September 2023 - December 2023</p>
-        <p>
-
-        </p>
-    </div>
-</section>
-
-<!-- Certifications Section -->
-<section id="certifications" class="animated-section">
-    <h1 class="section-heading mb75px">
-        <span>
-            <i class="fas fa-certificate"></i>
-        </span>
-        <span> CERTIFICATIONS </span>
-    </h1>
-    <div class="certification-item animated-item">
-        <div class="certification-details">
-            <h2>Algorithms Specialisation</h2>
-            <p class="provider">Stanford Online</p>
-            <p class="date">October 2023</p>
-        </div>
-    </div>    
-    </div>
-    <div class="certification-item animated-item">
-        <div class="certification-details">
-            <h2>Machine Learning Specialisation</h2>
-            <p class="provider">Stanford Online</p>
-            <p class="date">October 2023</p>
-        </div>
-        <a href="Resume/Coursera 92WB3YM9E9WH.pdf" target="_blank">View Certificate</a>
-    </div>    
-    </div>
-    <div class="certification-item animated-item">
-        <div class="certification-details">
-            <h2>Cryptography</h2>
-            <p class="provider">Stanford Online</p>
-            <p class="date">September 2023</p>
-        </div>
-        <a href="Resume/Coursera Y43P7EVMAUMP.pdf" target="_blank">View Certificate</a>
-    </div>
-        <div class="certification-item animated-item">
-            <div class="certification-details">
-                <h2>Postman API Fundamentals Student Expert</h2>
-                <p class="provider">Postman</p>
-                <p class="date">September 2023</p>
+                <div class="work">
+                    <img src="images/Proj4.jpeg" alt="work" class="work-img">
+                    <div class="layer">
+                    <h3>StarWars DataBank</h3>
+                        <p>Contributed to a DataBankWebsite for storing, analysing, and categorising information about the StarWars world</p>
+                        <a href='https://github.com/zoddtheimmortal/starwars-db'><i class="fas fa-external-link-alt"></i></a>
+                </div>
+           </div>
+                <!--<a href="#" class="btn">View More</a>-->
             </div>
-    </div>
-</section>
-
-
-
-</section>
-        <!-- Contact details... -->
-    </div>
-</section>
-<footer class="footer">
-    <div class="contact-details">
-        <div class="contact-icon">
-            <i class="fas fa-phone"></i>
+        </div> 
+<!--Contact-->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fas fa-envelope"></i>pratyushbindal@hotmail.com</p>
+                        <p><i class="fas fa-phone"></i>+91-9897086464</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/pratyushbindal/"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://x.com/PratyushBindal"><i class="fab fa-twitter"></i></a>
+                            <a href="https://github.com/bPratyush"><i class="fab fa-github"></i></a>
+                            <a href="https://www.instagram.com/pratyushbindal/?hl=en"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <a href="images/PratyushBindal_Resume.pdf" class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" placeholder="Your Name" name="Name" required>
+                            <input type="email" placeholder="Your Email" name="Email" required>
+                            <input type="phone" placeholder="Your Phone" name="Phone">
+                            <textarea rows="5" placeholder="Your Message" name="Message"></textarea>
+                            <button type="submit" class="btn btn2">Send</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <p>Phone: +91-9897086464</p>
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; Made with <i class="fas fa-heart"></i> by Pratyush Bindal. All Rights Reserved.</p>
+            </div>
         </div>
-    </div>
-    <div class="contact-details">
-        <div class="contact-icon">
-            <i class="fas fa-envelope"></i>
-        </div>
-        <div>
-            <p>Email: prathubindal.mzn@gmail.com</p>
-        </div>
-    </div>
-    <div class="contact-details">
-        <div class="contact-icon">
-            <i class="fas fa-map-marker-alt"></i>
-        </div>
-        <div>
-            <p>Address: 559, Sunjay Marg, Muzaffarnagar, Uttar Pradesh, India</p>
-        </div>
-    </div>
-</footer>
+        <script>
+            var tablinks=document.getElementsByClassName('tab-links');
+            var tabcontents=document.getElementsByClassName('tab-contents');
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove('active-link');
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove('active-tab');
+                }
+                event.currentTarget.classList.add('active-link');
+                document.getElementById(tabname).classList.add('active-tab');
+            }
+        </script>
+        <script>
+            var sidemenu=document.getElementById('sidemenu');
+            function openmenu(){
+                sidemenu.style.right="0";
+            }
+            function closemenu(){
+                sidemenu.style.right="-200px";
+            }
+        </script>
 <script>
-    // Initialize ScrollReveal
-    ScrollReveal().reveal('.animated-item', {
-        delay: 200,
-        interval: 200,
-        distance: '50px',
-        origin: 'bottom',
-        easing: 'ease-in-out'
-    });
-
-    // Add touch interaction styles
-    document.addEventListener("touchstart", function() {}, true);
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwP5z2Jt1We8kiE-RiO5hWa18hCpTgOQzIfF1JNugCHowJHJZB1Omxo41hwNoFUe8Eq/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById('msg');
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {msg.innerHTML="Thanks for Contacting Me"
+        setTimeout(function(){
+            msg.innerHTML="";
+        },5000);
+        form.reset();
+        })
+      .catch(error => console.error('Error!', error.message))
+  })
 </script>
-        </main>
     </body>
 </html>
