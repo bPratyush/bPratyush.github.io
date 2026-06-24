@@ -14,7 +14,7 @@ body{
 
 #header{
     width: 100%;
-    height: 90vh;
+    height: 100vh; /* increased to make home page bigger */
     background-image: url(images/2927.jpg);
     background-size: cover;
     background-position: center;
@@ -71,13 +71,13 @@ nav ul li a:hover::after{
 }
 
 .header-text h1{
-    margin-top: 200px;
-    font-size: 40px;
+    margin-top: 220px;
+    font-size: 48px;
 }
 
 .header-text h1 span{
     color: #ff004f;
-    font-size: 60px;
+    font-size: 80px;
 }
 
 .sub-title{
@@ -171,28 +171,7 @@ nav ul li a:hover::after{
     }
 }
 
-.contact-right form{
-    width: 100%;
-}
-
-form input, form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 15px 0;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 6px;
-}
-
-form btn2{
-    padding: 14px 60px;
-    font-size: 18px;
-    margin-top: 20px;
-    cursor: pointer;
-}
+/* Contact form removed; input/textarea styles cleaned up */
 
 .copyright{
     width: 100%;
@@ -259,8 +238,4 @@ nav .fas{
     }
 }
 
-#msg{
-    color: #ff004f;
-    margin-top: -20px;
-    display: block;
-}
+/* message element removed with form */
