@@ -1,188 +1,218 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-body{
-    background: #080808;
-    color: #fff;
+
+body {
+    background: #f5f1e8;
+    color: #161616;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.65;
 }
 
-#header{
-    width: 100%;
-    height: 100vh; /* increased to make home page bigger */
-    background-image: url(images/2927.jpg);
-    background-size: cover;
-    background-position: center;
+a {
+    color: #1f4e79;
+    text-decoration: none;
 }
 
-.container{
-    max-width: 1200px;
-    margin: auto;
-    padding: 10px 10%;
+a:hover {
+    text-decoration: underline;
 }
 
-nav{
+.page {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 40px 24px 28px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 28px;
+    align-items: start;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #d8d0c2;
+}
+
+.profile-card {
+    width: 125px;
+    height: 125px;
+    border: 1px solid #c7beae;
+    background: #ffffff;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 8px;
+}
+
+.hero-copy h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.hero-meta {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+}
+
+.hero-links {
+    display: flex;
     flex-wrap: wrap;
+    gap: 14px 18px;
+    margin-bottom: 14px;
+    color: #333;
 }
 
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
+.hero-links span {
+    white-space: nowrap;
 }
 
-nav ul li a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
+.hero-links i {
+    margin-right: 6px;
+    color: #444;
 }
 
-nav ul li a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #ff004f;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
+.hero-summary {
+    max-width: 72ch;
+    font-size: 1rem;
 }
 
-nav ul li a:hover::after{
+.section {
+    padding-top: 26px;
+}
+
+.section h2 {
+    font-size: 1.45rem;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #d8d0c2;
+    font-weight: 700;
+}
+
+.entry {
+    margin-bottom: 18px;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 2px;
+}
+
+.entry strong,
+.skill-group h3 {
+    font-size: 1.05rem;
+}
+
+.role,
+.muted,
+.details,
+.entry p {
+    color: #2e2e2e;
+}
+
+.muted {
+    font-style: italic;
+}
+
+.details {
+    margin-top: 4px;
+}
+
+ul {
+    margin: 8px 0 0 20px;
+}
+
+li {
+    margin-bottom: 7px;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.skill-group {
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid #d8d0c2;
+    padding: 14px 16px;
+}
+
+.skill-group h3 {
+    margin-bottom: 6px;
+}
+
+.split-section {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.footer-note {
+    border-top: 1px solid #d8d0c2;
+    margin-top: 10px;
+    padding-top: 18px;
+    padding-bottom: 12px;
+}
+
+.copyright {
     width: 100%;
-    transition: 0.5s;
-}
-
-.header-text h1{
-    margin-top: 220px;
-    font-size: 48px;
-}
-
-.header-text h1 span{
-    color: #ff004f;
-    font-size: 80px;
-}
-
-.sub-title{
-    font-size: 60px;
-    font-weight: 600;
-    color: #fff;
-}
-/* Portfolio and About sections removed from HTML; related styles cleaned up. */
-
-.btn{
-    display: block;
-    margin: 50px auto;
-    width: 200px; /* Set a constant width */
-    height: 50px;
-    border: 1px solid #ff004f;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #fff;
-    transition: background 0.5s;
     text-align: center;
+    padding: 18px 0 24px;
+    color: #4a4a4a;
+    font-size: 0.95rem;
 }
 
-.btn:hover{
-    background: #ff004f;
+.copyright i {
+    color: #b33a3a;
 }
 
-.btn.btn2{
-    margin-top: 50px;
-    display: inline-block;
-    transition: background 0.5s;
-    background: black;
-}
+@media only screen and (max-width: 760px) {
+    .page {
+        padding: 24px 16px 18px;
+    }
 
-.btn.btn2:hover{
-    background: #ff004f;
-}
+    .hero {
+        grid-template-columns: 1fr;
+    }
 
-.btn.btn2:active{
-    background: #ff004f;
-    animation: sentAnimation 1s;
-}
+    .profile-card {
+        width: 110px;
+        height: 110px;
+    }
 
-@keyframes sentAnimation {
-    0% {
-        transform: scale(1);
+    .hero-copy h1 {
+        font-size: 2rem;
     }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
 
-/* Contact form removed; input/textarea styles cleaned up */
+    .hero-links {
+        flex-direction: column;
+        gap: 8px;
+    }
 
-.copyright{
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    background: #262626;
-    font-weight: 300;
-    margin-top: 20px;
-}
+    .skill-grid,
+    .split-section {
+        grid-template-columns: 1fr;
+    }
 
-.copyright i{
-    color: #ff004f;
-}
-
-/* CSS for Small Screen */
-nav .fas{
-    display: none;
-}
-@media only screen and (max-width:600px){
-    #header{
-        background-image: url(images/2927.jpg);
-    }
-    .header-text{
-        margin-top: 100%;
-        font-size: 16px;
-    }
-    .header-text h1{
-        font-size: 30px;
-    }
-    nav .fas{
-        display: block;
-        font-size: 25px;
-    }
-    nav ul{
-        background: #ff004f;
-        position: fixed;
-        top:0;
-        right:-200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 25px;
-    }
-    nav ul .fas{
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
-    .sub-title{
-        font-size: 40px;
-    }
-    .copyright{
-        font-size: 14px;
+    .entry-header {
+        flex-direction: column;
+        gap: 2px;
     }
 }
