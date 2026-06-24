@@ -32,13 +32,13 @@ a:hover {
 }
 
 .page {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 44px 30px 24px;
+    width: 100%;
+    margin: 0;
+    padding: 40px 48px 24px;
 }
 
 .hero {
-    text-align: center;
+    text-align: left;
     padding-bottom: 16px;
     margin-bottom: 14px;
     border-bottom: 1px solid #cfcfcf;
@@ -58,7 +58,7 @@ a:hover {
 .hero-links {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 0 10px;
     margin-bottom: 10px;
     color: #222222;
@@ -80,7 +80,29 @@ a:hover {
 .hero-summary {
     max-width: 72ch;
     font-size: 1rem;
-    margin: 0 auto;
+    margin: 0;
+    text-align: left;
+}
+
+.hero-actions {
+    margin: 12px 0 10px;
+}
+
+.resume-button {
+    display: inline-block;
+    padding: 9px 16px;
+    border: 1px solid #111111;
+    background: #f4f4f4;
+    color: #111111;
+    font-size: 0.96rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.resume-button:hover {
+    background: #111111;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .section {
@@ -158,12 +180,12 @@ li {
     margin-top: 18px;
     padding-top: 14px;
     padding-bottom: 12px;
-    text-align: center;
+    text-align: left;
 }
 
 @media only screen and (max-width: 760px) {
     .page {
-        padding: 28px 18px 20px;
+        padding: 24px 16px 18px;
     }
 
     .hero h1 {
@@ -173,6 +195,10 @@ li {
     .hero-links {
         gap: 0 8px;
         line-height: 1.6;
+    }
+
+    .hero-actions {
+        margin-top: 10px;
     }
 
     .split-section {
