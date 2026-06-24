@@ -16,8 +16,6 @@
                     <img src="images/large.png" alt="logo" class="logo">
                     <ul id="sidemenu">
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <i class="fas fa-times" onclick="closemenu()"></i> <!--For Mobile View-->
                     </ul>
@@ -33,103 +31,8 @@
                 </div>
             </div>
         </div>
-<!--About-->
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="images/Img.jpeg" alt="about" class="about-img">
-                    </div>
-                    <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Hi, I am Pratyush Bindal pursuing Bachelors of Engineering in Computer Science and Engineering with a Minor in Data Science at BITS Pilani</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                        <p class="tab-links" onclick="opentab('extracurriculars')">Extracurriculars</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Languages</span><br>C, C++, Java, Python, HTML, CSS, SQL, JavaScript, TypeScript, Prolog, Verilog HDL, Assembly</li>
-                            <li><span>Technologies</span><br>TensorFlow, PyTorch, Spring Framework, React, SolidJS, Google Cloud Platform</li>
-                            <li><span>Databases</span><br>NoSQL, PostgreSQL & SQL-based databases like MongoDB, Supabase, Oracle MySQL</li>
-                            <li><span>Developer Tools</span><br>Postman, VSCode, IntelliJ, Eclipse, PyCharm, Android SDK, Anaconda, Git, Docker</li>
-                            <li><span>Libraries</span><br>numpy, scipy, pandas, matplotlib, scikit-learn, keras, seaborn, openCV</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Software Engineer Intern</span><br>Microsoft<br>Hyderabad, Telangana, India<br>May 2025 - July 2025</li>
-                            <li><span>Undergraduate Teaching Assistant - BITS F464 Machine Learning</span><br>Birla Institute of Technology and Science, Pilani<br>Hyderabad, Telangana, India<br>Jan 2025 - May 2025</li>
-                            <li><span>Summer Research Intern</span><br>Indian Institute of Remote Sensing (IIRS), Indian Space Research Organisation (ISRO)<br>Dehradun, Uttarakhand, India<br>May 2024 - July 2024</li>
-                            <li><span>Undergraduate Teaching Assistant - PHY F111 Mechanics, Oscillations and Waves</span><br>Birla Institute of Technology and Science, Pilani<br>Hyderabad, Telangana, India<br>Aug 2023 - Dec 2023</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>B.E., Computer Science</span><br>Birla Institute of Technology and Science, Pilani<br>Hyderabad, Telangana, India<br>Oct 2022 - July 2026</li>
-                            <li><span>High School</span><br>G. D. Goenka Public School<br>Muzaffarnagar, Uttar Pradesh, India<br>April 2018 - July 2022</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="extracurriculars">
-                        <ul>
-                            <li><span>Mathematics Mentor</span><br>Academic Counselling Cell<br>Hyderabad, Telangana, India<br>Sept 2023 - Dec 2023<br>Mentored 1000+ students undergoing Mathematics I course at the institute<br></li>
-                            <li><span>Research, Editorial and Events Member</span><br>Ad Astra - Astronomy and Science Club<br>Hyderabad, Telangana, India<br>Oct 2022- Sept 2023<br>Gained an insightful experience researching about recent advancements in Astronomy & Astrophysics<br></li>
-                        </ul>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-<!--Portfolio-->
-        <div id="portfolio">
-            <div class="container">
-                <h1 class="sub-title">My Work</h1>
-                <div class="work-list">
-                    <div class="work">
-                        <img src="images/Proj5.jpeg" alt="work" class="work-img">
-                        <div class="layer">
-                        <h3>Ship Detection and Classification</h3>
-                            <p>Ship detection and automatic feature extraction using CNN-based image processing algorithms particularly YOLO v8, v9, & v10 and Detection Transformers (DETR) based techniques such as Grounding DINO</p>
-                            <a href='https://github.com/Kalashnikov42/SatShipNet'><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/Proj1.jpeg" alt="work" class="work-img">
-                        <div class="layer">
-                            <h3>Reinforcement Learning in Cybersecurity</h3>
-                            <p>Deep Reinforcement Learning based Network Intrusion Detection System</p>
-                            <a href='https://github.com/bPratyush/Intrusion-Detection-System'><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/Proj3.jpeg" alt="work" class="work-img">
-                        <div class="layer">
-                        <h3>BITSBids</h3>
-                            <p>Ready-to-scale Full Stack Bidding Website exclusive to BITSians</p>
-                            <a href='https://github.com/bPratyush/BITSBids'><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/Proj4.jpeg" alt="work" class="work-img">
-                    <div class="layer">
-                    <h3>StarWars DataBank</h3>
-                        <p>Contributed to a DataBankWebsite for storing, analysing, and categorising information about the StarWars world</p>
-                        <a href='https://github.com/zoddtheimmortal/starwars-db'><i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-                <div class="work">
-                    <img src="images/Proj2.jpeg" alt="work" class="work-img">
-                    <div class="layer">
-                    <h3>Handwritten Digit Recognizer</h3>
-                        <p>A fully functional neural network recognising Handwritten Digits from scratch without using any libraries</p>
-                        <a href='https://github.com/bPratyush/Machine-Learning/tree/main/Handwritten%20Digit%20Recognizer'><i class="fas fa-external-link-alt"></i></a>
-                </div>
-           </div>
-                <!--<a href="#" class="btn">View More</a>-->
-            </div>
-        </div> 
+        
+        
 <!--Contact-->
         <div id="contact">
             <div class="container">
@@ -164,20 +67,7 @@
                 <p>&copy; Made with <i class="fas fa-heart"></i> by Pratyush Bindal. All Rights Reserved.</p>
             </div>
         </div>
-        <script>
-            var tablinks=document.getElementsByClassName('tab-links');
-            var tabcontents=document.getElementsByClassName('tab-contents');
-            function opentab(tabname){
-                for(tablink of tablinks){
-                    tablink.classList.remove('active-link');
-                }
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove('active-tab');
-                }
-                event.currentTarget.classList.add('active-link');
-                document.getElementById(tabname).classList.add('active-tab');
-            }
-        </script>
+        
         <script>
             var sidemenu=document.getElementById('sidemenu');
             function openmenu(){
